@@ -1,5 +1,3 @@
-# AI Resume Analyzer
-
 # 🤖 AI Resume Analyzer
 
 An AI-powered Resume Analyzer built using Flask and Python.
