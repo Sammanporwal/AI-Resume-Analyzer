@@ -1,0 +1,34 @@
+AI RESUME ANALYZER REPORT
+========================================
+
+Resume Score: 40/100
+
+Detected Skills:
+- leadership
+- excel
+- communication
+- teamwork
+
+Recommended Skills:
+- python
+- java
+- c++
+- sql
+- mysql
+- html
+- css
+- javascript
+
+Recommended Careers:
+- Software Engineer
+- IT Support Specialist
+
+Interview Questions:
+- Describe a leadership experience.
+- How do you motivate a team?
+- What is VLOOKUP?
+- What are Pivot Tables?
+- Tell me about yourself.
+- How do you handle team conflicts?
+- What role do you usually play in a team?
+- Describe a successful team project.
