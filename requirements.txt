@@ -3,3 +3,4 @@ python-docx
 reportlab
 google-genai
 gunicorn
+PyPDF2
