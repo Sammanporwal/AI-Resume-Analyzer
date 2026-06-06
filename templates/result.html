@@ -85,15 +85,15 @@
         }
 
         .status-red{
-            color:#ef4444;
+            color:#ff4444;
         }
 
         .status-orange{
-            color:#f59e0b;
+            color:#ffb347;
         }
 
         .status-green{
-            color:#22c55e;
+            color:#00ff88;
         }
 
         .progress{
@@ -253,6 +253,30 @@
             border-radius:50%;
 
             background:#1e293b;
+        }
+
+        .circle-red{
+            background:
+            conic-gradient(
+              #ef4444 calc(var(--score) * 1%),
+              #334155 0
+            );
+        }
+
+        .circle-orange{
+            background:
+            conic-gradient(
+              #f59e0b calc(var(--score) * 1%),
+              #334155 0
+            );
+        }
+
+        .circle-green{
+            background:
+            conic-gradient(
+              #22c55e calc(var(--score) * 1%),
+              #334155 0
+            );
         }
 
         .score-value{
@@ -439,9 +463,17 @@
     <div class="card" id="score">
         <h2>Resume Score</h2>
 
-        <div class="score-circle"
-             id="scoreCircle"
-             style="--score:0;">
+        <div class="score-circle
+        {% if score <= 40 %}
+        circle-red
+        {% elif score <= 70 %}
+        circle-orange
+        {% else %}
+        circle-green
+        {% endif %}
+        "
+        id="scoreCircle"
+        style="--score:0;">
 
             <div class="score-value">
                 <span id="score-counter">0</span>/100
@@ -459,15 +491,7 @@
         </p>
 
 
-     <div class="score-status
-     {% if score <= 40 %}
-     status-red
-     {% elif score <= 70 %}
-     status-orange
-     {% else %}
-     status-green
-     {% endif %}
-     ">
+     <div class="score-status {% if score <= 40 %}status-red{% elif score <= 70 %}status-orange{% else %}status-green{% endif %}">
          {{ score_status }}
      </div>
 
