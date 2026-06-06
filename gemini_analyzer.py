@@ -1,6 +1,7 @@
 from google import genai
+import os
 
-API_KEY = "AQ.Ab8RN6KucXyp3TcAb6alHBjYum93_59YgQ9gw2hQdsCE6ivWIA"
+API_KEY = os.getenv("GEMINI_API_KEY")
 
 client = genai.Client(api_key=API_KEY)
 
@@ -51,7 +52,7 @@ if __name__ == "__main__":
 Python
 SQL
 Flask
-Data Analytics
+Data Analyticss
 Power BI
 Excel
 Leadership
